@@ -1,0 +1,16 @@
+
+<--- Last few GCs --->
+
+[35620:0x102803200]   232909 ms: Mark-sweep 2053.2 (2241.2) -> 2052.9 (2245.2) MB, 7405.1 / 0.1 ms  allocation failure GC in old space requested
+[35620:0x102803200]   239039 ms: Mark-sweep 2052.9 (2245.2) -> 2052.9 (2189.2) MB, 6125.4 / 0.1 ms  last resort GC in old space requested
+[35620:0x102803200]   242856 ms: Mark-sweep 2052.9 (2189.2) -> 2052.9 (2170.7) MB, 3816.3 / 0.0 ms  last resort GC in old space requested
+
+
+<--- JS stacktrace --->
+
+==== JS stack trace =========================================
+
+Security context: 0x28124a625879 <JSObject>
+    1: fromString(aka fromString) [buffer.js:314] [bytecode=0x2812f147cbf9 offset=164](this=0x281250f822d1 <undefined>,string=0x28128ed7d191 <Very long string[442329968]>,encoding=0x28124a6358e9 <String[4]: utf8>)
+    2: from [buffer.js:177] [bytecode=0x2812f147c6e1 offset=11](this=0x28121a4364f1 <JSFunction Buffer (sfi = 0x28124a67c461)>,value=0x28128ed7d191 <Very long string[442329968]>,encodi...
+
